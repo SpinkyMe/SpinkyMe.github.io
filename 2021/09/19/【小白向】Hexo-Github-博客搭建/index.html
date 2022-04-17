@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="keywords" content="Hexo Theme Keep">
+    <meta name="description" content="personal website of a SE student">
+    <meta name="author" content="SpinkyMe">
+    
+    <title>
+        
+            【小白向】Hexo + Github 博客搭建 |
+        
+        Missing My Sheep
+    </title>
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    <link rel="shortcut icon" href="/images/sheep.svg">
+    
+<link rel="stylesheet" href="/css/font-awesome.min.css">
+
+    <script id="hexo-configurations">
+    let KEEP = window.KEEP || {};
+    KEEP.hexo_config = {"hostname":"example.com","root":"/","language":"en","path":"search.json"};
+    KEEP.theme_config = {"toc":{"enable":true,"number":true,"expand_all":true,"init_open":true},"style":{"primary_color":"#FFCCCC","avatar":"/images/Hasakki.svg","favicon":"/images/sheep.svg","article_img_align":"left","left_side_width":"260px","content_max_width":"920px","hover":{"shadow":true,"scale":false},"first_screen":{"enable":true,"background_img":"/images/bg.svg","description":"I am looking for my sheep."},"scroll":{"progress_bar":{"enable":true},"percent":{"enable":true}}},"local_search":{"enable":true,"preload":false},"code_copy":{"enable":true,"style":"default"},"pjax":{"enable":false},"lazyload":{"enable":false},"version":"3.4.3"};
+    KEEP.language_ago = {"second":"%s seconds ago","minute":"%s minutes ago","hour":"%s hours ago","day":"%s days ago","week":"%s weeks ago","month":"%s months ago","year":"%s years ago"};
+  </script>
+<meta name="generator" content="Hexo 6.1.0"></head>
+
+
+<body>
+<div class="progress-bar-container">
+    
+        <span class="scroll-progress-bar"></span>
+    
+
+    
+</div>
+
+
+<main class="page-container">
+
+    
+
+    <div class="page-main-content">
+
+        <div class="page-main-content-top">
+            <header class="header-wrapper">
+
+    <div class="header-content">
+        <div class="left">
+            
+            <a class="logo-title" href="/">
+                Missing My Sheep
+            </a>
+        </div>
+
+        <div class="right">
+            <div class="pc">
+                <ul class="menu-list">
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/"
+                            >
+                                HOME
+                            </a>
+                        </li>
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/archives"
+                            >
+                                ARCHIVES
+                            </a>
+                        </li>
+                    
+                    
+                        <li class="menu-item search search-popup-trigger">
+                            <i class="fas fa-search"></i>
+                        </li>
+                    
+                </ul>
+            </div>
+            <div class="mobile">
+                
+                    <div class="icon-item search search-popup-trigger"><i class="fas fa-search"></i></div>
+                
+                <div class="icon-item menu-bar">
+                    <div class="menu-bar-middle"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="header-drawer">
+        <ul class="drawer-menu-list">
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/">HOME</a>
+                </li>
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/archives">ARCHIVES</a>
+                </li>
+            
+        </ul>
+    </div>
+
+    <div class="window-mask"></div>
+
+</header>
+
+
+        </div>
+
+        <div class="page-main-content-middle">
+
+            <div class="main-content">
+
+                
+                    <div class="fade-in-down-animation">
+    <div class="article-content-container">
+
+        <div class="article-title">
+            <span class="title-hover-animation">【小白向】Hexo + Github 博客搭建</span>
+        </div>
+
+        
+            <div class="article-header">
+                <div class="avatar">
+                    <img src="/images/Hasakki.svg">
+                </div>
+                <div class="info">
+                    <div class="author">
+                        <span class="name">SpinkyMe</span>
+                        
+                            <span class="author-label">SE Student</span>
+                        
+                    </div>
+                    <div class="meta-info">
+                        <div class="article-meta-info">
+    <span class="article-date article-meta-item">
+        <i class="fas fa-edit"></i>&nbsp;2021-09-19 22:04:43
+    </span>
+    
+    
+        <span class="article-tags article-meta-item">
+            <i class="fas fa-tags"></i>&nbsp;
+            <ul>
+                
+                    <li>
+                        <a href="/tags/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E5%92%8C%E7%BE%8E%E5%8C%96/">个人博客搭建和美化</a>&nbsp;
+                    </li>
+                
+            </ul>
+        </span>
+    
+
+    
+    
+    
+    
+        <span class="article-pv article-meta-item">
+            <i class="fas fa-eye"></i>&nbsp;<span id="busuanzi_value_page_pv"></span>
+        </span>
+    
+</div>
+
+                    </div>
+                </div>
+            </div>
+        
+
+        <div class="article-content markdown-body">
+            <h4 id="写在前面"><a href="#写在前面" class="headerlink" title="写在前面"></a>写在前面</h4><h6 id="致谢"><a href="#致谢" class="headerlink" title="致谢"></a>致谢</h6><ul>
+<li>本文是笔者参考B站UP主视频搬运崽啊的<a class="link"   target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1mU4y1j72n?p=5" >教学视频<i class="fas fa-external-link-alt"></i></a>搭建了自己的博客后，写的一篇总结，在这里向<a class="link"   target="_blank" rel="noopener" href="https://space.bilibili.com/441519471?spm_id_from=333.788.b_765f7570696e666f.2" >视频搬运崽<i class="fas fa-external-link-alt"></i></a>致谢！之前只是一味的学知识，表达能力极差，也想通过写博客增强自己的表达能力。</li>
+</ul>
+<h6 id="谁适合这篇博客"><a href="#谁适合这篇博客" class="headerlink" title="谁适合这篇博客"></a>谁适合这篇博客</h6><ul>
+<li><p>如果你是一个大牛，正在网上冲浪，那么这篇文章会浪费您宝贵的三分钟。</p>
+</li>
+<li><p>如果你是一个小白，想要搭建自己的博客，却屡屡碰壁，那么请您耐心地看下去。</p>
+</li>
+</ul>
+<h6 id="常见问题"><a href="#常见问题" class="headerlink" title="常见问题"></a>常见问题</h6><ul>
+<li>网络问题：在执行<code>hexo d</code>等命令时，报错<code>spawned failed/access failed</code>,这些因为我天朝独特的网络原因，导致连接失败，耐心点，多试几次就好。</li>
+</ul>
+<h4 id="准备工具下载安装"><a href="#准备工具下载安装" class="headerlink" title="准备工具下载安装"></a>准备工具下载安装</h4><h6 id="Node-js"><a href="#Node-js" class="headerlink" title="Node.js"></a>Node.js</h6><ul>
+<li><a class="link"   target="_blank" rel="noopener" href="https://nodejs.org/dist/v14.17.6/node-v14.17.6-x64.msi" >点击下载Node.js<i class="fas fa-external-link-alt"></i></a></li>
+<li>一直点下一步就行，如果有需要，可以参考这篇博客：<a class="link"   target="_blank" rel="noopener" href="https://www.cnblogs.com/liuqiyun/p/8133904.html" >Node.js安装及环境配置之Windows篇<i class="fas fa-external-link-alt"></i></a></li>
+</ul>
+<h6 id="Git"><a href="#Git" class="headerlink" title="Git"></a>Git</h6><ul>
+<li><a class="link"   target="_blank" rel="noopener" href="https://github.com/git-for-windows/git/releases/download/v2.33.0.windows.2/Git-2.33.0.2-64-bit.exe" >点击下载Git<i class="fas fa-external-link-alt"></i></a></li>
+<li>安装参考这篇教程：<a class="link"   target="_blank" rel="noopener" href="https://www.cnblogs.com/xueweisuoyong/p/11914045.html" >Windows系统Git安装教程(详解Git安装过程)<i class="fas fa-external-link-alt"></i></a></li>
+</ul>
+<h6 id="检测是否安装正确"><a href="#检测是否安装正确" class="headerlink" title="检测是否安装正确"></a>检测是否安装正确</h6><ul>
+<li><p>win+R键，然后输入cmd打开终端窗口</p>
+</li>
+<li><p>分别输入下面三行命令，检查工具是否安装成功：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">node -v</span><br><span class="line">npm -v</span><br><span class="line">git --version</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>如果分别显示了版本号，那么恭喜你安装成功！</p>
+</li>
+</ul>
+<h6 id="安装Hexo"><a href="#安装Hexo" class="headerlink" title="安装Hexo"></a>安装Hexo</h6><ul>
+<li>在终端输入命令<code>npm install hexo-cli -g</code>安装hexo</li>
+<li>输入<code>hexo -v</code>查看是否安装成功，如果看到了hexo版本号，那么恭喜你完成了第一步。</li>
+</ul>
+<h4 id="搭建仓库"><a href="#搭建仓库" class="headerlink" title="搭建仓库"></a>搭建仓库</h4><h6 id="GitHub账号"><a href="#GitHub账号" class="headerlink" title="GitHub账号"></a>GitHub账号</h6><ul>
+<li>首先你要有一个GitHub的账号，申请注册等不再赘述</li>
+<li>需要注意的是，你一定要记住自己的三个信息</li>
+<li><ul>
+<li>用户名：比如笔者的用户名就是Hasakki23,取自笔者很喜欢的一个英雄yasuo</li>
+<li>注册邮箱：形式是”<a class="link"   href="mailto:&#120;&#x78;&#x78;&#x78;&#x78;&#120;&#120;&#x40;&#x78;&#120;&#46;&#99;&#111;&#109;" >&#120;&#x78;&#x78;&#x78;&#x78;&#120;&#120;&#x40;&#x78;&#120;&#46;&#99;&#111;&#109;<i class="fas fa-external-link-alt"></i></a>“</li>
+<li>密码：这个自己记住就行</li>
+</ul>
+</li>
+</ul>
+<h6 id="创建GitHub仓库"><a href="#创建GitHub仓库" class="headerlink" title="创建GitHub仓库"></a>创建GitHub仓库</h6><p><img src="/%E3%80%90%E5%B0%8F%E7%99%BD%E5%90%91%E3%80%91Hexo-Github-%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/image-20210919194345642.png"></p>
+<ul>
+<li>点击new</li>
+</ul>
+<p><img src="/%E3%80%90%E5%B0%8F%E7%99%BD%E5%90%91%E3%80%91Hexo-Github-%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/image-20210919194913234.png"></p>
+<ul>
+<li>Repository name填写 <code>用户名</code>+<code>.github.io</code></li>
+<li>勾选 add a readme file</li>
+</ul>
+<p>仓库创建成功</p>
+<h4 id="生成SSH-Keys"><a href="#生成SSH-Keys" class="headerlink" title="生成SSH Keys"></a>生成SSH Keys</h4><h6 id="电脑是否有SSH"><a href="#电脑是否有SSH" class="headerlink" title="电脑是否有SSH"></a>电脑是否有SSH</h6><ul>
+<li>随便进入一个本地文件</li>
+<li>在空白处右键，选择<code>Git Bash Here</code>，打开命令窗口</li>
+<li>输入<code>ssh</code>;检测是否有ssh,应该是都有的</li>
+</ul>
+<h6 id="生成SSH"><a href="#生成SSH" class="headerlink" title="生成SSH"></a>生成SSH</h6><ul>
+<li>输入ssh：<code>ssh-keygen -t rsa -C &quot;你的注册邮箱&quot;</code>，接下来点击四次回车。<strong>完成后不要关闭</strong></li>
+<li>找到<code>C盘-&gt;User-&gt;你电脑的当前用户-&gt;.ssh-&gt;id.rsa.pub</code>，用nodepad++打开，将里面的内容全部复制</li>
+</ul>
+<h6 id="在Github中添加你的SSH"><a href="#在Github中添加你的SSH" class="headerlink" title="在Github中添加你的SSH"></a>在Github中添加你的SSH</h6><ul>
+<li>回到github，点击头像，找到下拉菜单里的Settings选项，左边选项栏找到SSH,点击进入</li>
+<li>在SSH Keys中，选择新建钥匙，钥匙名字随便取，将刚刚id.rsa.pub中的内容粘贴进去，<strong>不要做任何删改！</strong></li>
+<li>在刚才的命令窗口中，输入<code>ssh -T git@github.com </code>,检查是否绑定成功。</li>
+<li>看到<code>yes/no</code>时，输入yes</li>
+<li>绑定成功后会提醒绑定成功！</li>
+</ul>
+<h4 id="生成本地页面"><a href="#生成本地页面" class="headerlink" title="生成本地页面"></a>生成本地页面</h4><ul>
+<li>首先建立一个自己的博客文件夹</li>
+<li>进入文件夹，空白处右键，<code>Git Bash Here</code></li>
+<li>初始化hexo,输入<code>hexo init</code>，完成初始化后，你的博客文件夹会出现一些配置文件</li>
+<li>生成静态页面：输入<code>hexo server</code>，启动服务器后，你就可以在<a class="link"   target="_blank" rel="noopener" href="http://localhost:4000/%E7%9C%8B%E5%88%B0%E8%87%AA%E5%B7%B1%E5%8D%9A%E5%AE%A2%E7%9A%84%E9%9D%99%E6%80%81%E9%A1%B5%E9%9D%A2%E4%BA%86%EF%BC%8C%E4%BD%86%E6%98%AF%E8%BF%99%E4%B8%AA%E9%A1%B5%E9%9D%A2%E5%88%AB%E4%BA%BA%E6%9A%82%E6%97%B6%E8%BF%98%E7%9C%8B%E4%B8%8D%E5%88%B0" >http://localhost:4000/看到自己博客的静态页面了，但是这个页面别人暂时还看不到<i class="fas fa-external-link-alt"></i></a></li>
+</ul>
+<h4 id="同步到个人博客"><a href="#同步到个人博客" class="headerlink" title="同步到个人博客"></a>同步到个人博客</h4><ul>
+<li>将你生成的博客发布到互联网上去，和大家分享！</li>
+</ul>
+<h6 id="修改配置文件"><a href="#修改配置文件" class="headerlink" title="修改配置文件"></a>修改配置文件</h6><ul>
+<li><p>找到你博客文件夹上的<code>_config.yml</code>文件，用nodepad++打开</p>
+</li>
+<li><p>找到deploy的部分，将deploy部分删除，替换为下面的代码：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repository: xxx.github.io</span><br><span class="line">  branch: main</span><br></pre></td></tr></table></figure>
+
+<p>type:填git</p>
+<p>repository:回到github，找到你刚才创建的仓库</p>
+<p><img src="/%E3%80%90%E5%B0%8F%E7%99%BD%E5%90%91%E3%80%91Hexo-Github-%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/image-20210919202209964.png"></p>
+<p>图中的选项就是你的仓库地址！</p>
+<p>branch:填<strong>main</strong>,这是github的一项改动，网上很多教程是master,但填写master是无法工作的！</p>
+<p><strong>注意：在type,repository,branch 三个选项后填写内容时，要在冒号后面加一个英文的空格！</strong></p>
+</li>
+</ul>
+<h6 id="同步到个人博客-1"><a href="#同步到个人博客-1" class="headerlink" title="同步到个人博客"></a>同步到个人博客</h6><ul>
+<li>空白处右键，<code>Git Bash Here</code>，进入命令窗口</li>
+<li>安装hexo-deployer-git自动部署发布工具：<code>npm install hexo-deployer-git --save</code></li>
+<li>生成：<code>hexo g</code></li>
+<li>发布：<code>hexo d</code></li>
+</ul>
+<h6 id="Github账号密码验证"><a href="#Github账号密码验证" class="headerlink" title="Github账号密码验证"></a>Github账号密码验证</h6><ul>
+<li><p>账号：你的用户名，输入后跳转到密码界面。</p>
+</li>
+<li><p>密码：这里是一个令牌，你要去到Settings-&gt;Developer settings-&gt;Personal access token</p>
+<p><img src="/%E3%80%90%E5%B0%8F%E7%99%BD%E5%90%91%E3%80%91Hexo-Github-%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/image-20210919203245911.png"></p>
+</li>
+<li><ul>
+<li><p>点击生成令牌</p>
+</li>
+<li><p>配置令牌，名字随便取，权限全部勾选，然后点击生成令牌</p>
+</li>
+<li><p>随后会出现很长一段字符串，这就是令牌。复制到刚才输入密码的界面，粘贴，确定。</p>
+</li>
+<li><p>仓库的网址，就是你的仓库名，即 用户名.github.io</p>
+</li>
+<li><p>接下来就可以在你的博客上分享你的文章了！</p>
+</li>
+</ul>
+</li>
+</ul>
+<p>最初的博客是很丑的:cry:,但是你可以去自主寻找美化博客的方法，个性化你的博客！</p>
+
+        </div>
+
+        
+
+        
+
+        
+    </div>
+</div>
+
+
+                
+            </div>
+
+        </div>
+
+        <div class="page-main-content-bottom">
+            <footer class="footer">
+    <div class="info-container">
+        <div class="copyright-info info-item">
+            &copy;
+            
+              <span>2020</span>&nbsp;-&nbsp;
+            
+            2022&nbsp;<i class="fas fa-heart icon-animate"></i>&nbsp;<a href="/">SpinkyMe</a>
+        </div>
+        
+            <script async  src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+            <div class="website-count info-item">
+                
+                    <span id="busuanzi_container_site_uv">
+                        Visitor Count&nbsp;<span id="busuanzi_value_site_uv"></span>&ensp;
+                    </span>
+                
+                
+                    <span id="busuanzi_container_site_pv">
+                        Totalview&nbsp;<span id="busuanzi_value_site_pv"></span>
+                    </span>
+                
+            </div>
+        
+        <div class="theme-info info-item">
+            Powered by <a target="_blank" href="https://hexo.io">Hexo</a>&nbsp;|&nbsp;Theme&nbsp;<a class="theme-version" target="_blank" href="https://github.com/XPoet/hexo-theme-keep">Keep v3.4.3</a>
+        </div>
+        
+    </div>
+</footer>
+
+        </div>
+    </div>
+
+    
+        <div class="post-tools">
+            <div class="post-tools-container">
+    <ul class="tools-list">
+        <!-- TOC aside toggle -->
+        
+            <li class="tools-item page-aside-toggle">
+                <i class="fas fa-outdent"></i>
+            </li>
+        
+
+        <!-- go comment -->
+        
+    </ul>
+</div>
+
+        </div>
+    
+
+    <div class="right-bottom-side-tools">
+        <div class="side-tools-container">
+    <ul class="side-tools-list">
+        <li class="tools-item tool-font-adjust-plus flex-center">
+            <i class="fas fa-search-plus"></i>
+        </li>
+
+        <li class="tools-item tool-font-adjust-minus flex-center">
+            <i class="fas fa-search-minus"></i>
+        </li>
+
+        <li class="tools-item tool-expand-width flex-center">
+            <i class="fas fa-arrows-alt-h"></i>
+        </li>
+
+        <li class="tools-item tool-dark-light-toggle flex-center">
+            <i class="fas fa-moon"></i>
+        </li>
+
+        <!-- rss -->
+        
+
+        
+
+        <li class="tools-item tool-scroll-to-bottom flex-center">
+            <i class="fas fa-arrow-down"></i>
+        </li>
+    </ul>
+
+    <ul class="exposed-tools-list">
+        <li class="tools-item tool-toggle-show flex-center">
+            <i class="fas fa-cog fa-spin"></i>
+        </li>
+        
+            <li class="tools-item tool-scroll-to-top flex-center">
+                <i class="arrow-up fas fa-arrow-up"></i>
+                <span class="percent"></span>
+            </li>
+        
+    </ul>
+</div>
+
+    </div>
+
+    
+        <aside class="page-aside">
+            <div class="post-toc-wrap">
+    <div class="post-toc">
+        <ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%86%99%E5%9C%A8%E5%89%8D%E9%9D%A2"><span class="nav-number">1.</span> <span class="nav-text">写在前面</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#%E8%87%B4%E8%B0%A2"><span class="nav-number">1.0.1.</span> <span class="nav-text">致谢</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#%E8%B0%81%E9%80%82%E5%90%88%E8%BF%99%E7%AF%87%E5%8D%9A%E5%AE%A2"><span class="nav-number">1.0.2.</span> <span class="nav-text">谁适合这篇博客</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98"><span class="nav-number">1.0.3.</span> <span class="nav-text">常见问题</span></a></li></ol></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%87%86%E5%A4%87%E5%B7%A5%E5%85%B7%E4%B8%8B%E8%BD%BD%E5%AE%89%E8%A3%85"><span class="nav-number">2.</span> <span class="nav-text">准备工具下载安装</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#Node-js"><span class="nav-number">2.0.1.</span> <span class="nav-text">Node.js</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#Git"><span class="nav-number">2.0.2.</span> <span class="nav-text">Git</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#%E6%A3%80%E6%B5%8B%E6%98%AF%E5%90%A6%E5%AE%89%E8%A3%85%E6%AD%A3%E7%A1%AE"><span class="nav-number">2.0.3.</span> <span class="nav-text">检测是否安装正确</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#%E5%AE%89%E8%A3%85Hexo"><span class="nav-number">2.0.4.</span> <span class="nav-text">安装Hexo</span></a></li></ol></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%90%AD%E5%BB%BA%E4%BB%93%E5%BA%93"><span class="nav-number">3.</span> <span class="nav-text">搭建仓库</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#GitHub%E8%B4%A6%E5%8F%B7"><span class="nav-number">3.0.1.</span> <span class="nav-text">GitHub账号</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#%E5%88%9B%E5%BB%BAGitHub%E4%BB%93%E5%BA%93"><span class="nav-number">3.0.2.</span> <span class="nav-text">创建GitHub仓库</span></a></li></ol></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E7%94%9F%E6%88%90SSH-Keys"><span class="nav-number">4.</span> <span class="nav-text">生成SSH Keys</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#%E7%94%B5%E8%84%91%E6%98%AF%E5%90%A6%E6%9C%89SSH"><span class="nav-number">4.0.1.</span> <span class="nav-text">电脑是否有SSH</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#%E7%94%9F%E6%88%90SSH"><span class="nav-number">4.0.2.</span> <span class="nav-text">生成SSH</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#%E5%9C%A8Github%E4%B8%AD%E6%B7%BB%E5%8A%A0%E4%BD%A0%E7%9A%84SSH"><span class="nav-number">4.0.3.</span> <span class="nav-text">在Github中添加你的SSH</span></a></li></ol></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E7%94%9F%E6%88%90%E6%9C%AC%E5%9C%B0%E9%A1%B5%E9%9D%A2"><span class="nav-number">5.</span> <span class="nav-text">生成本地页面</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%90%8C%E6%AD%A5%E5%88%B0%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2"><span class="nav-number">6.</span> <span class="nav-text">同步到个人博客</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#%E4%BF%AE%E6%94%B9%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6"><span class="nav-number">6.0.1.</span> <span class="nav-text">修改配置文件</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#%E5%90%8C%E6%AD%A5%E5%88%B0%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2-1"><span class="nav-number">6.0.2.</span> <span class="nav-text">同步到个人博客</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#Github%E8%B4%A6%E5%8F%B7%E5%AF%86%E7%A0%81%E9%AA%8C%E8%AF%81"><span class="nav-number">6.0.3.</span> <span class="nav-text">Github账号密码验证</span></a></li></ol></li></ol></li></ol>
+    </div>
+</div>
+        </aside>
+    
+
+    <div class="image-viewer-container">
+    <img src="">
+</div>
+
+
+    
+        <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+          <span class="search-input-field-pre">
+            <i class="fas fa-keyboard"></i>
+          </span>
+            <div class="search-input-container">
+                <input autocomplete="off"
+                       autocorrect="off"
+                       autocapitalize="off"
+                       placeholder="Search..."
+                       spellcheck="false"
+                       type="search"
+                       class="search-input"
+                >
+            </div>
+            <span class="popup-btn-close">
+                <i class="fas fa-times"></i>
+            </span>
+        </div>
+        <div id="search-result">
+            <div id="no-result">
+                <i class="fas fa-spinner fa-pulse fa-5x fa-fw"></i>
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+
+</main>
+
+
+
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/main.js"></script>
+
+<script src="/js/header-shrink.js"></script>
+
+<script src="/js/back2top.js"></script>
+
+<script src="/js/dark-light-toggle.js"></script>
+
+
+
+    
+<script src="/js/local-search.js"></script>
+
+
+
+
+    
+<script src="/js/code-copy.js"></script>
+
+
+
+
+
+<div class="post-scripts">
+    
+        
+<script src="/js/left-side-toggle.js"></script>
+
+<script src="/js/libs/anime.min.js"></script>
+
+<script src="/js/toc.js"></script>
+
+    
+</div>
+
+
+
+</body>
+</html>
